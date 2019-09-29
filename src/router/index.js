@@ -34,7 +34,7 @@ export default new Router({
           name: 'datetime',
           component: DatetimeBar
         }, {
-          path: '*',
+          path: '/404',
           name: '404',
           component: NotFound
         },

@@ -55,6 +55,15 @@
         </template>
       </el-table-column>
     </el-table>
+    <br/>
+    <el-pagination
+      style="text-align: right"
+      background
+      hide-on-single-page
+      layout="total, prev, pager, next, jumper"
+      :total="100"
+    >
+    </el-pagination>
   </div>
 </template>
 
@@ -84,6 +93,69 @@
           amount: 0,
           number: 1000,
           type: 2
+        }, {
+          string: '居中显示',
+          date1: Date.now(),
+          date2: Date.now(),
+          amount: 0,
+          number: 1000,
+          type: 2
+        }, {
+          string: '居中显示',
+          date1: Date.now(),
+          date2: Date.now(),
+          amount: 0,
+          number: 1000,
+          type: 2
+        }, {
+          string: '居中显示',
+          date1: Date.now(),
+          date2: Date.now(),
+          amount: 0,
+          number: 1000,
+          type: 2
+        }, {
+          string: '居中显示',
+          date1: Date.now(),
+          date2: Date.now(),
+          amount: 0,
+          number: 1000,
+          type: 2
+        }, {
+          string: '居中显示',
+          date1: Date.now(),
+          date2: Date.now(),
+          amount: 0,
+          number: 1000,
+          type: 2
+        }, {
+          string: '居中显示',
+          date1: Date.now(),
+          date2: Date.now(),
+          amount: 0,
+          number: 1000,
+          type: 2
+        }, {
+          string: '居中显示',
+          date1: Date.now(),
+          date2: Date.now(),
+          amount: 0,
+          number: 1000,
+          type: 2
+        }, {
+          string: '居中显示',
+          date1: Date.now(),
+          date2: Date.now(),
+          amount: 0,
+          number: 1000,
+          type: 1
+         }, {
+          string: '居中显示',
+          date1: Date.now(),
+          date2: Date.now(),
+          amount: 0,
+          number: 1000,
+          type: 1
         }]
       }
     },

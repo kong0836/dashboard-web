@@ -3,7 +3,7 @@
     <el-form-item>
       <el-select
         v-model="value"
-        placeholder="请选择XXX类型"
+        placeholder="请选择导出类型"
         clearable>
         <el-option
           v-for="item in options"
@@ -12,6 +12,16 @@
           :value="item.value">
         </el-option>
       </el-select>
+    </el-form-item>
+    <el-form-item>
+      <el-date-picker
+        v-model="dateRange"
+        type="datetimerange"
+        range-separator="至"
+        start-placeholder="开始日期"
+        end-placeholder="结束日期"
+        align="right">
+      </el-date-picker>
     </el-form-item>
     <el-form-item>
       <el-input
@@ -33,22 +43,23 @@
       return {
         options: [{
           value: '选项1',
-          label: '黄金糕'
+          label: '用户管理'
         }, {
           value: '选项2',
-          label: '双皮奶'
+          label: '角色管理'
         }, {
           value: '选项3',
-          label: '蚵仔煎'
+          label: '订单管理'
         }, {
           value: '选项4',
-          label: '龙须面'
+          label: '系统管理'
         }, {
           value: '选项5',
-          label: '北京烤鸭'
+          label: '日志管理'
         }],
         value: '',
-        inputValue: ''
+        dateRange: '',
+        inputValue: '',
       }
     }
   }
