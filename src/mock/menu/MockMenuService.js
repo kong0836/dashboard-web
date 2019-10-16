@@ -25,6 +25,11 @@ const menuList = [{
     url: 'datetime',
     menuName: '日期时间组件',
     icon: 'el-icon-s-data'
+  }, {
+    menuId: '2',
+    url: 'step',
+    menuName: '步骤条',
+    icon: 'el-icon-s-data'
   }]
 }, {
   menuId: '333',

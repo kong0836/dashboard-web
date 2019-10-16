@@ -1,6 +1,7 @@
 <template>
   <div>
-    <search-bar></search-bar>
+<!--    <search-bar></search-bar>-->
+    <search></search>
     <el-table
       :data="tableData"
       border
@@ -71,10 +72,12 @@
   import SearchBar from "@/components/search/SearchBar";
   import moment from 'moment';
   import account from 'accounting';
+  import Search from "@/components/search/Search";
 
   export default {
     name: "TableBar",
     components: {
+      Search,
       SearchBar
     },
     data() {

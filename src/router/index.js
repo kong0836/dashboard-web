@@ -7,6 +7,7 @@ import NotFound from "@/components/404/NotFound";
 import DatetimeBar from "@/components/datetime/DatetimeBar";
 import HomeBar from "@/components/layout/HomeBar";
 import Login from "@/components/login/Login";
+import Step from "@/view/step/Step";
 
 Vue.use(Router)
 
@@ -33,6 +34,10 @@ export default new Router({
           path: '/datetime',
           name: 'datetime',
           component: DatetimeBar
+        }, {
+          path: '/step',
+          name: 'step',
+          component: Step
         }, {
           path: '/404',
           name: '404',
