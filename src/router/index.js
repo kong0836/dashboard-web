@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import Layout from '@/components/layout/layout'
 import TableBar from "@/components/table/TableBar";
 import NotFound from "@/components/404/NotFound";
@@ -44,10 +43,6 @@ export default new Router({
           component: NotFound
         },
       ]
-    }, {
-      path: '/demo',
-      name: 'HelloWorld',
-      component: HelloWorld
     },
   ]
 })
