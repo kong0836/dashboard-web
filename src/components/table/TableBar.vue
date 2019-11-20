@@ -1,6 +1,6 @@
 <template>
   <div>
-<!--    <search-bar></search-bar>-->
+    <!--    <search-bar></search-bar>-->
     <search></search>
     <el-table
       :data="tableData"
@@ -152,7 +152,7 @@
           amount: 0,
           number: 1000,
           type: 1
-         }, {
+        }, {
           string: '居中显示',
           date1: Date.now(),
           date2: Date.now(),
@@ -208,6 +208,9 @@
       amountFormat(amount) {
         return account.formatMoney(amount, '');
       }
+    },
+    mounted() {
+
     }
   }
 </script>

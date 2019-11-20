@@ -7,7 +7,6 @@
       <el-step title="第四步" icon="el-icon-picture"></el-step>
     </el-steps>
     <el-button style="margin-top: 12px;" @click="nextClick">下一步</el-button>
-
   </div>
 </template>
 

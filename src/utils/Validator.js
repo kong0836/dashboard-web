@@ -58,3 +58,13 @@ export function NumberValidator(number) {
   const re = /^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$/;
   return re.test(number);
 }
+
+/**
+ * 匹配正整数、小数点后两位小数的正数
+ * @param number
+ * @returns {boolean}
+ */
+export function amountValidator(number) {
+  const amountRegex = /^[+]?(\d+)$|^[+]?(\d+\.\d{0,2})$/;
+  return amountRegex.test(number);
+}
