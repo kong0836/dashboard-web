@@ -5,6 +5,7 @@
 import Vue from 'vue'
 import App from './App'
 import ElementUI from 'element-ui'
+import Navigation from 'vue-navigation'
 
 // JS
 import router from './router'
@@ -16,6 +17,7 @@ import '@/assets/scss/index.scss'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI, {size: 'medium'})
+Vue.use(Navigation, {router})
 
 /* eslint-disable no-new */
 
