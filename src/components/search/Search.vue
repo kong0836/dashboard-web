@@ -3,30 +3,30 @@
     <el-col :span="1">
       <el-button type="primary" @click="createClick">新建</el-button>
     </el-col>
-    <el-col :span="4" :offset="16">
-      <span>活动状态：</span>
-      <el-select
-        v-model="query.processStatus"
-        style="width: 150px"
-        placeholder="全部"
-        @change="findClick">
-        <el-option
-          v-for="item in processStatusList"
-          :key="item.value"
-          :label="item.label"
-          :value="item.value">
-        </el-option>
-      </el-select>
-    </el-col>
-    <el-col :span="3">
-      <el-input
-        v-model="query.name"
-        style="width: 200px;"
-        placeholder="请输入活动名称"
-        :suffix-icon="suffixIcon"
-        @keyup.enter.native="findClick"
-        :on-icon-click="findClick">
-      </el-input>
+    <el-col :span="23">
+      <div style="float: right">
+        <span>活动状态：</span>
+        <el-select
+          v-model="query.processStatus"
+          style="width: 100px"
+          placeholder="全部"
+          @change="findClick">
+          <el-option
+            v-for="item in processStatusList"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value">
+          </el-option>
+        </el-select>
+        <el-input
+          v-model="query.name"
+          style="width: 200px;"
+          placeholder="请输入活动名称"
+          :suffix-icon="suffixIcon"
+          @keyup.enter.native="findClick"
+          :on-icon-click="findClick">
+        </el-input>
+      </div>
     </el-col>
   </el-row>
 </template>
@@ -73,5 +73,4 @@
 </script>
 
 <style scoped>
-
 </style>

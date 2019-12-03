@@ -210,7 +210,6 @@
       }
     },
     mounted() {
-
     }
   }
 </script>

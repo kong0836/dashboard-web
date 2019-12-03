@@ -17,5 +17,12 @@
 </script>
 
 <style scoped>
+  .el-menu {
+    /*取消背景颜色，同父亲背景色*/
+    background: transparent;
+  }
 
+  .el-menu-item {
+    color: #818496;
+  }
 </style>

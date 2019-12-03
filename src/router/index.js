@@ -6,6 +6,7 @@ import NotFound from "@/components/404/NotFound";
 import DatetimeBar from "@/components/datetime/DatetimeBar";
 import HomeBar from "@/components/layout/HomeBar";
 import Login from "@/components/login/Login";
+import Homepage from "@/components/homepage/Homepage";
 import Step from "@/view/step/Step";
 
 Vue.use(Router)
@@ -13,11 +14,18 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
+      path: '/',
+      redirect: '/login'
+    }, {
+      path: '/homepage',
+      name: 'homepage',
+      component: Homepage
+    }, {
       path: '/login',
       name: 'login',
       component: Login
     }, {
-      path: '/',
+      path: '/layout',
       name: 'layout',
       component: Layout,
       children: [
