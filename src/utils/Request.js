@@ -101,11 +101,4 @@ service.interceptors.response.use(
     return Promise.reject(error)
   })
 
-/**
- *  封装请求
- * @param data {url,method,data}
- * @returns {Promise<AxiosResponse<any> | void>}
- */
-export function request(data) {
-  return service.request(data)
-}
+export default service;

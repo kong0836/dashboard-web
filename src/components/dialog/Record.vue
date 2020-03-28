@@ -15,8 +15,6 @@
         :align="item.align"
         :label="item.label"
         :width="item.width">
-        <template slot-scope="scope">
-        </template>
       </el-table-column>
     </el-table>
   </el-dialog>

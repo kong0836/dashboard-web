@@ -9,7 +9,7 @@
       :default-active="defaultActive"
       @select="siderSelect">
       <el-menu-item
-        v-for="item in menuList"
+        v-for="item in ResourceList"
         v-if="!item.subMenu"
         :index="item.url"
         :key="item.menuId">
@@ -41,27 +41,27 @@
 </template>
 
 <script>
-  import MenuListService from "@/service/menu/MenuListService";
+  import ResourceListService from "@/service/menu/ResourceListService";
 
   export default {
     name: "Sider",
     data() {
       return {
         defaultActive: 'home',
-        menuList: [],
+        ResourceList: [],
       }
     },
     mounted() {
-      this.findMenuList();
+      this.findResourceList();
     },
     methods: {
       siderSelect(url) {
         this.$router.push({path: url});
       },
-      findMenuList() {
-        MenuListService.findMenuList().then((res) => {
+      findResourceList() {
+        ResourceListService.findResourceList().then((res) => {
           if (res.data) {
-            this.menuList = res.data;
+            this.ResourceList = res.data;
           }
         })
       }

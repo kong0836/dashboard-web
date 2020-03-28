@@ -42,6 +42,17 @@ const menuList = [{
     menuName: '404',
     icon: 'el-icon-edit'
   }]
+}, {
+  menuId: '444',
+  url: '',
+  menuName: '资源配置',
+  icon: 'el-icon-setting',
+  subMenu: [{
+    menuId: '5',
+    url: 'resource',
+    menuName: '资源配置',
+    icon: 'el-icon-setting'
+  }]
 }];
 
 export default {

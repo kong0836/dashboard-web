@@ -61,13 +61,13 @@
         this.recordObject.title = '抽奖记录';
 
         this.columnArray = [{
-          prop: 'date',
+          prop: 'name',
           label: '姓名',
           align: 'center'
         }];
 
         this.tableData = [{
-          date: 1574686496
+          name: '小明'
         }];
       }
     }
