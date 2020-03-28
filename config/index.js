@@ -13,7 +13,7 @@ module.exports = {
     proxyTable: {
       '/': {
         // 跨域地址
-        target: 'localhost:8088/',
+        target: 'localhost:8888/',
         // 是否跨域
         changeOrigin: true,
         // 是否使用https
