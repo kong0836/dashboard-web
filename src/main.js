@@ -8,6 +8,8 @@ import ElementUI from 'element-ui'
 
 // JS
 import router from './router'
+// svg-icon
+import './icons';
 
 // 非生产环境, 适配MockJs模拟数据                 // api: https://github.com/nuysoft/Mock
 if (process.env.NODE_ENV !== 'production') {
